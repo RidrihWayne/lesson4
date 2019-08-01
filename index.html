@@ -7,8 +7,6 @@
 <body>
 	<header>
 		<h1>Mads Mikkelsen</h1>
-	</header>
-	<main>
 		<form action="https://mcslayer.com/hillel/post.php" method="post">
 			<label for="login-field">Your login
       			<input type="text" name="login" id="login-field">
@@ -20,15 +18,14 @@
       		</label>
       		<br>
       		<br>
-      		<label for="login-button">
-      			<input type="submit" name="button" value="Login" id="login-button">
+      		<label for="email-field">Your email
+      			<input type="email" name="email" id="email-field">
       		</label>
       		<br>
       		<br>
       		<label for="subscribe-field">Subscribe
       			<input type="checkbox" id="subscribe-field" checked>
       		</label>
-      		<br>
       		<br>
       		<p>What is your gender?</p>
 		    <label>
@@ -39,9 +36,19 @@
 		    	<input type="radio" name="question-one" value="F">
 		        Famale
 		    </label>
-
-      		<input type="submit" value="Отправить">	
+			<label for="login-button">
+      			<input type="submit" name="button" value="Login" id="login-button">
+      		</label>	
     	</form>
+    </header>
+    <br>
+    <br>
+    <main>
+    	<!-- Через iframe предлагает youtube, через <video> не работает-->
+    	<section class="video-content">
+          <iframe width="1024" height="576" src="https://www.youtube.com/embed/Tdar0UKZwiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    	<br>
 		<b><p>Mads Dittmann Mikkelsen</p></b>
 		<img src="https://pmcdeadline2.files.wordpress.com/2016/05/mads-mikkelsen.jpg?w=1024&h=768&crop=1.jpg" alt="mads_mikkeksen_smile">
 		<p>(born 22 November 1965) is a Danish actor. Originally a gymnast and dancer, he began acting in 1996.<br> 
@@ -93,6 +100,7 @@
 				<p><a href="./assets/pages/page3.html" target="_blank">Contacts</a></p>
 			</li>
 		</ul>
+
 	</footer>
 </body>
 </html>
